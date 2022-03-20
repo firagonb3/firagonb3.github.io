@@ -1,0 +1,29 @@
+<nav>
+  <ul class="nav shadow-sm p-1 mb-2 justify-content-center bg-light">
+    <li class="nav-item">
+      <?php echo "<a class='nav-link active' aria-current='page' href='" . $uri .  "'>Inicio</a>"; ?>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Categorias</a>
+      <ul class="dropdown-menu">
+        <?php
+          echo "
+            <li><a class='dropdown-item' href='" . $uri . "/categorias/noticias'>noticias</a></li>
+            <li>
+              <hr class='dropdown-divider'>
+            </li>
+            <li><a class='dropdown-item' href='" . $uri . "/categorias/PC'>PC</a></li>
+            <li><a class='dropdown-item' href='" . $uri . "/categorias/XBOX'>XBOX</a></li>
+            <li><a class='dropdown-item' href='" . $uri . "/categorias/nintendo'>Nintendo</a></li>
+            <li><a class='dropdown-item' href='" . $uri . "/categorias/PSN'>PSN</a></li>
+            <li>
+              <hr class='dropdown-divider'>
+            </li>
+            <li><a class='dropdown-item' href='" . $uri . "/categorias/cosplays/'>Cosplays</a></li>
+          "; 
+        ?>
+      </ul>
+    </li>
+  </ul>
+</nav>

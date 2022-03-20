@@ -1,0 +1,57 @@
+.botoncito-container {
+    position: fixed;
+    bottom: 5vh;
+    right: 0;
+    width: 5vh;
+    height: 6.6;
+    z-index: -1;
+}
+
+.botoncito {
+    width: 0vh;
+    height: 0vh;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.botoncito button{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .botoncito {
+    animation: popup .3s ease-im-out;
+    right: 0;
+    width: 5vh;
+    z-index: 11;
+}
+
+.show button{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes  popup {
+    0%{
+        width: 0rem;
+        
+    }
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+    100% {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
